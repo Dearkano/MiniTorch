@@ -1,0 +1,26 @@
+digraph  {
+rankdir=LR;
+z;
+"Add (Op 0)" [penwidth=3, shape=square];
+v1;
+v2;
+"Mul (Op 1)" [penwidth=3, shape=square];
+v3;
+y;
+"Mul (Op 2)" [penwidth=3, shape=square];
+x;
+"constant 10.0";
+"Mul (Op 3)" [penwidth=3, shape=square];
+"Add (Op 0)" -> z  [key=0];
+v1 -> "Add (Op 0)"  [key=0];
+v2 -> "Add (Op 0)"  [key=1];
+"Mul (Op 1)" -> v1  [key=0];
+v3 -> "Mul (Op 1)"  [key=0];
+y -> "Mul (Op 1)"  [key=1];
+"Mul (Op 2)" -> v2  [key=0];
+x -> "Mul (Op 2)"  [key=0];
+x -> "Mul (Op 3)"  [key=0];
+x -> "Mul (Op 3)"  [key=1];
+"constant 10.0" -> "Mul (Op 2)"  [key=1];
+"Mul (Op 3)" -> v3  [key=0];
+}

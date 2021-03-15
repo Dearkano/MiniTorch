@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Style",
+      "setup": "sudo -H pip3 install -qr requirements.txt",
+      "run": "flake8 --ignore \"N801, E203, E266, E501, W503, F812, E741, N803, N802, N806\" minitorch/ tests/ project/",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test 0.1",
+      "setup": "sudo -H pip3 install -qr requirements.txt",
+      "run": "python3 -m pytest -m task0_1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test 0.2",
+      "setup": "sudo -H pip3 install -qr requirements.txt",
+      "run": "python3 -m pytest -m task0_2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test 0.3",
+      "setup": "sudo -H pip3 install -qr requirements.txt",
+      "run": "python3 -m pytest -m task0_3",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test 0.4",
+      "setup": "sudo -H pip3 install -qr requirements.txt",
+      "run": "python3 -m pytest -m task0_4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
